@@ -1,0 +1,78 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 80px;
+  z-index: 1;
+
+  transition-timing-function: ease-in-out;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-right: 140px;
+  background: transparent;
+  color: var(--text);
+}
+
+.nav_black {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav_logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav_avatar {
+  position: fixed;
+  right: 20px;
+  width: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  position: fixed;
+  right: 90px;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 120px;
+  background-color: var(--surface-strong);
+  float: right;
+  margin-top: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.dropdown span {
+  color: var(--text);
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.dropdown span:nth-child(2):hover {
+  background-color: red;
+  height: 20px;
+}

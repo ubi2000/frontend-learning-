@@ -1,0 +1,61 @@
+.dynamic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dynamic-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dynamic-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dynamic-form-field label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.dynamic-form-field input,
+.dynamic-form-field textarea,
+.dynamic-form-field select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+}
+
+.dynamic-form-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.dynamic-form-submit {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dynamic-form-submit:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 680px) {
+  .dynamic-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
